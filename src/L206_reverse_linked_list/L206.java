@@ -34,9 +34,12 @@ public class L206 {
     public static void main(String[] args) {
         ListNode head = create();
         head = reverse(head);
-        while (head!=null){
-            System.out.println(head.val);
-            head=head.next;
+//        while (head!=null){
+//            System.out.println(head.val);
+//            head=head.next;
+//        }
+        for (ListNode l=head;l!=null;l=l.next){
+            System.out.println(l.val);
         }
 
 //        System.out.println(front.val+front.next.val);
